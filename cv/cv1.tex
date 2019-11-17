@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{Black}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{STEPHEN ONYANCHA}
+\MySlogan{Curriculum Vitae}
+
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Birth}{August 10, 1994}
+\PersonalEntry{Address}{Jamhuri, Nairobi}
+\PersonalEntry{Phone}{+254 701 38001}
+\PersonalEntry{Mail}{\url{stevenonyancha1@gmail.com}}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{BSc. Computer Science}{2013-2017}{Laikipia University, Laikipia}{}
+\sepspace
+
+
+\EducationEntry{Cert. KCSE}{2009-2012}{St. Marks High School,Cherangani}{}
+\sepspace
+
+\EducationEntry{Cert. KCPE}{2001-2008}{Milimani Primary School,Kitale}{}
+\sepspace
+
+% Professional Certificate gained so far.
+\NewPart{Professional Certificate}
+
+\EducationEntry{Scrum fundamental Certified}{2019}{Scrum Study}{}
+\sepspace
+\EducationEntry{Cert. CCNA}{2018}{Institute of Advanced Technology}{}
+\sepspace
+\EducationEntry{Cert. Linux Essential}{2017}{Cisco Network Academy}{}
+\sepspace
+\EducationEntry{Cert. Introduction to Cyber Security}{2017}{Cisco Network Academy}{}
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work experience}{}
+
+\EducationEntry{System Admin Intern}{2018}{Simba Colt Motors, Full-time}{ICT support  hardware and software maintenance and troubleshooting ERP Support and maintenance. }
+\sepspace
+
+
+\EducationEntry{Attache}{2016}{Kenya Urban Roads Authority , Full-time}{ ICT Support Hardware and software maintenance and troubleshooting Assisted in setting up KURA Data center at Regional Office Industrial
+area; water detecting system, adding storage, router, switch to the
+rack, UPS installation.}
+\sepspace
+
+\EducationEntry{Internal Attache}{2015}{Laikipia University, Full-time}{ Oracle database administration  Built school website as Individual Project us HTML, CSS, JavaScript and using MySQL Server with LAMP server.  Linux administration overview Networking switching and routing configuration of devices andtroubleshooting.}
+\sepspace
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{Skilled in Linux Administration, Cisco IOS and Huawei VRP, Cyber Security, programming language; Java,C,C++, Scripting languages: Python, javascript and Bash, SQL  query language. Microsoft azure}
+
+\sepspace
+
+\SkillsEntry{Languages spoken}{Gusii (mother tongue)}
+\SkillsEntry{}{English (fluent)}
+\SkillsEntry{}{Swahili(fluent)}
+
+%\SkillsEntry{Software}{\textsc{Matlab}, \LaTeX, \textsc{Ansys}, \textsc{Comsol}}
+
+
+%%% References
+%%% ------------------------------------------------------------
+\NewPart{References}{
+\begin{tabular}{ll}
+Prof. Karume Simon Maina​,\\
+C.O.D Computing and Informatics,\\
+Laikipia University,\\
+P.O. Box 1100-20300,\\
+Nyahururu, Kenya.\\
++254 722499397\\
+skarume@laikipia.ac.ke\\ & 
+\\Ms. Emily Tialal,\\
+AICTO Nairobi Region,\\
+Kenya Urban Roads Authority, ​\\
+P.O. Box 4177-00800,\\
+Nairobi, Kenya.\\
++254 727859755\\
+nairobi@kura.ac.ke\\ 
+
+Mr. Abraham Kosgey​,\\
+Principal,\\
+St. Mark's High School,\\ ​
+P.O Box 270-30200,\\
+Kitale, Kenya.\\
++254 722428682\\
+kosgeyak@gmail.com\\&
+
+\\Mr. Boniface Mwakio​,\\
+System Administrator,\\
+Simba Colt Motors LTD,\\ ​
+P.O. Box 48296,\\
+Mombasa Road, Kenya.\\
++254 722 844346\\
+bonie@simbacolt.com\\
+
+
+
+
+\end{tabular}
+}
+
+\end{document}

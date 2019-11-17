@@ -1,0 +1,150 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {STEPHEN ONYANCHA}}\\
+	Nairobi $\cdot$ stevenonyancha1@gmail.com $\cdot$ +254 701 38001 $\cdot$ www.impalatech.xyz\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Laikipia University}\hfill Nyahururu, Laikipia.\\
+BSc Computer Science \textit{GPA: Second Class} \hfill 2013 - 2017\\
+\vspace{2mm}
+\textbf{St. Mark\textquotesingle{}s High School}\hfill Cherangani, Trans Nzoia.\\
+Cert. KCSE \textit{GPA: A-} \hfill 2009 - 2012\\
+\vspace{2mm}
+\textbf{Milimani Primary}\hfill Kitale, TransNzoia.\\
+Cert. Computer Science \textit{GPA: B+ / 365} \hfill 2001 - 2008\\
+\vspace{2mm}
+\textbf{Institute of Advanced Technology}\hfill Nairobi\\
+Cert. CCNA \hfill 2017 - 2018\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Simba Colt Motors} \hfill Mombas Road, Nairobi\\
+\textit{System Admin Intern} \hfill 2018 - 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item ICT support
+	\item hardware and software maintenance and troubleshooting
+	\item ERP Support and maintenance.
+\end{itemize}
+\textbf{Kenya Urban Roads Authority} \hfill Industrial Area, Nairobi.\\
+\textit{Attache} \hfill 2016 - 2016\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item ICT Support
+	\item Hardware and software maintenance and troubleshooting
+	\item Assisted in setting up KURA Data center at Regional Office Industrial area; water detecting system, adding storage, router, switch to the rack, UPS installation.
+\end{itemize}
+\textbf{Laikipia University} \hfill Nyahururu, Laikipia.\\
+\textit{Internal Attache} \hfill 2015 - 2015\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Oracle database administration
+	\item Built school website as Individual Project us HTML, CSS, JavaScript and using MySQL Server with LAMP server.
+	\item Linux administration overview
+	\item Networking switching and routing configuration of devices and troubleshooting.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages:                                & Java, C, C++              \\
+	Linux Administration:                                 & Cisco IOS and Huawei VRP. \\
+	leadership, communication, and collaboration skills.: &                           \\
+	Cyber security:                                       &                           \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Project}
+{\textbf{Road Inspection Software Tool}} {\sl PHP, Javascript, HTML, Mysql} \hfill https://github.com/steveonyancha/inspection.git\\
+A software for collecting data during routine road maintenance works.\\
+\vspace*{2mm}
+{\textbf{Biometric Students Lecture Attendance Management System.}} {\sl PHP, Javacript, HTML, MYSQL, VERI Finger API} \\
+Group Project. System that tracks student lecture attendance.\\
+\vspace*{2mm}
+
+\header{Award}
+\textbf{Introduction to Cyber Scurity} \hfill Cisco Network Academy\\
+Certificate of Completion. \hfill 2017\\
+\vspace*{2mm}
+\textbf{Linux Essential} \hfill Cisoc Networking Academy\\
+Certificate of Completion \hfill 2017\\
+\vspace*{2mm}
+
+\ 
+\end{document}
