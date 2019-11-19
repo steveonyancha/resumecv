@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.15)  17 NOV 2019 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.15)  18 NOV 2019 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -532,10 +532,10 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 157.
+ne 155.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 []\OT1/cmr/m/it/10.95 (+20) Languages
  []
 
@@ -545,17 +545,17 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 170.
+ne 168.
 
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [2] [3] (./cv1.aux) ) 
 Here is how much of TeX's memory you used:
- 8299 strings out of 492623
- 133624 string characters out of 6135668
+ 8297 strings out of 492623
+ 133614 string characters out of 6135668
  377159 words of memory out of 5000000
  12045 multiletter control sequences out of 15000+600000
- 18228 words of font info for 61 fonts, out of 8000000 for 9000
+ 18177 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,6n,51p,9089b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
@@ -564,7 +564,7 @@ ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
 sr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on cv1.pdf (3 pages, 82036 bytes).
+Output written on cv1.pdf (3 pages, 81983 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
